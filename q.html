@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Div based layout</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+}
+
+header{
+  background-color: DarkBlue;
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+nav{
+  background:blue;
+}
+
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+nav li{
+  padding:15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+nav a:active {
+  background-color: aqua;
+  padding: 10px;
+  text-decoration: none;
+}
+
+main{
+  display:flex;
+}
+
+#aside{
+  width:20%;
+  background:LightGray;
+  padding:10px;
+}
+
+#section{
+  width:40%;
+  padding:10px;
+}
+
+#article{
+  width:40%;
+  padding:10px;
+}
+
+footer{
+  background-color:DarkBlue;
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media screen and (max-width:800px){
+  main{
+    flex-direction:column;
+  }
+  #aside,
+  #section,
+  #article{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>My Website Layout</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="#Home">Home</a></li>
+<li><a href="#News">News</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li><a href="#About">About</a></li>
+</ul>
+</nav>
+
+<main>
+
+<div id="aside">
+<h1>Aside</h1>
+<h2>This page demonstrates a simple div-based website layout using HTML and CSS. The aside section usually contains additional information, links, or short descriptions related to the main content of the page.</h2>
+</div>
+
+<div id="section">
+<h1>Section</h1>
+<h2>
+This section contains the main content of the website. It shows how different parts of a webpage are arranged using HTML structure and basic CSS styling. Creating layouts like this helps beginners understand how web pages are organized.
+You can place important information here such as introductions, announcements, or summaries of the topic being discussed.
+</h2>
+</div>
+
+<div id="article">
+<h1>Article</h1>
+<h2>
+HTML is used to create the structure of a webpage, while CSS is used to design and style it. By combining these two technologies, developers can create responsive and visually appealing websites.
+Practicing simple layouts like headers, navigation bars, sidebars, sections, and footers is an important step in learning web development.
+</h2>
+</div>
+
+</main>
+
+<footer>
+<h1><footer>
+	  
+	  <p>@Ryzen Galura 2026</p>
+	  
+	  </footer></h1>
+</footer>
+
+</body>
+</html>
+
