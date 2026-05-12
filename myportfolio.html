@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryzen Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0,255,150,0.05);
+    border-bottom: 1px solid rgba(0,255,150,0.2);
+    position: sticky;
+    top: 0;
+}
+
+.navbar h1 {
+    color: #22c55e;
+}
+
+.navbar a {
+    color: #a7f3d0;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #22c55e;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    background: linear-gradient(45deg, #22c55e, #4ade80);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    color: #a7f3d0;
+}
+
+
+.section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #22c55e;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    background: rgba(0,255,150,0.05);
+    border: 1px solid rgba(0,255,150,0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #22c55e, #4ade80);
+    color: #02140f;
+}
+
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid #22c55e;
+    box-shadow: 0 0 15px #22c55e;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(0,255,150,0.2);
+}
+
+
+@media (max-width: 1000px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h1>My Portfolio</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>Hello, I'm Ryzen 👋</h2>
+    <p>
+        An aspiring IT professional passionate about technology, development, and problem-solving.
+    </p>
+</div>
+
+<div id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card profile">
+        <img src="photo.png" alt="profile">
+        <p>
+            Hello! I am a student of Information Technology with a strong enthusiasm for computers and technology. I find pleasure in understanding how systems operate and enhancing my abilities in programming, web development, and IT support
+        </p>
+    </div>
+</div>
+
+<div id="education" class="section">
+    <h2>Education</h2>
+    <div class="card">
+        <p>🎓 Pampanga State Agricultural University - BSIT</p>
+        <p>🏫 Precious High Academy Inc. - HUMSS</p>
+        <p>🏫 Dolores National High School</p>
+    </div>
+</div>
+
+<div id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+
+        <div class="card">
+            <h3>Resume</h3>
+            <p></p>
+            <a href="resume.html" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Resume with CSS</h3>
+            <p></p>
+             <a href="css.html" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>List and Table</h3>
+            <p></p>
+            <a href="list.html" class="btn">View Project</a>
+
+        </div>
+
+        <div class="card">
+            <h3>Web Layout</h3>
+            <p></p>
+             <a href="webdev.html" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Forms</h3>
+            <p></p>
+            <a href="forms.html" class="btn">View Project</a>
+        </div>
+
+         <div class="card">
+            <h3>CSS Grid</h3>
+            <p></p>
+            <a href="grid.html" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>CSS Grid Cards</h3>
+            <p></p>
+            <a href="gridcards.html" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Bootstrap</h3>
+            <p></p>
+            <a href="bootstrap.html" class="btn">View Project</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2026 Ryzen Portfolio</p>
+</div>
+
+</body>
+</html>

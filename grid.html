@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Grid Activity</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+
+  div[class^="grid"] div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+
+  
+  .grid-a {
+    display: grid;
+    grid-template-columns: 200px 75px;
+    gap: 10px;
+  }
+
+  .grid-a div {
+    background: lightblue;
+  }
+
+
+  .grid-b {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+    gap: 10px;
+  }
+
+  .grid-b div {
+    background: lightpink;
+  }
+
+  
+  .grid-c {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  .grid-c div {
+    background: lightcoral;
+  }
+</style>
+</head>
+<body>
+
+  
+<h1></h1>
+  <div class="grid-a">
+    <div>200px</div>
+    <div>75px</div>
+  </div>
+
+  
+<h1></h1>
+  <div class="grid-b">
+    <div>col1</div>
+    <div>col2</div>
+    <div>col3</div>
+  </div>
+
+ 
+<h1></h1>
+  <div class="grid-c">
+    <div>col1</div>
+    <div>col2</div>
+    <div>col3</div>
+    <div>col4</div>
+
+    <div>col1</div>
+    <div>col2</div>
+    <div>col3</div>
+    <div>col4</div>
+  </div>
+
+</body>
+</html>
